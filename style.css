@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background-color: #121212;
+}
+
+.main {
+    color: rgb(255, 255, 255);
+    width: 450px;
+    height: 700px;
+    background-size: contain;
+    position: relative;
+    background: url("rik-buiting-NXte4ti02Hs-unsplash.jpg") no-repeat;
+    background-size: contain;
+}
+
+.searchbox {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+label i {
+    color: black;
+    transform: translate(165px, 8px);
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    border: 0;
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    z-index: 7;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.content div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+#city {
+    font-size: 25px;
+    margin-left: 7px;
+}
+
+#degree {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.dailyAverage {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #202F5A;
+    font-size: 18px;
+}
+
+.dailyAverage::before {
+    content: "";
+    position: absolute;
+    bottom: 190px;
+    width: 100%;
+    height: 100px;
+    background: -webkit-linear-gradient(top, transparent, #202F5A);
+    z-index: 999;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.dailyAverage img {
+    width: 40px;
+    margin: 0 auto;
+}
+
+.symbol {
+    color: #FDD020;
+}
+
+#hourlyDegree {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#hour {
+    margin-bottom: 5px;
+}
